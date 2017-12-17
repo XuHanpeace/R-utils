@@ -1,0 +1,19 @@
+{
+  "name": "r-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "R-utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XuHanpeace/R-utils.git"
+  },
+  "author": "XuHanpeace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XuHanpeace/R-utils/issues"
+  },
+  "homepage": "https://github.com/XuHanpeace/R-utils#readme"
+}
