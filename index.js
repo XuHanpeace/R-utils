@@ -52,7 +52,7 @@ var curry = function(fn) {
                 var fn2_args = Array.prototype.slice.call(arguments,0);
                 //将剩下的参数与上次注册时的参数合并
                 //再次调用fn_1
-                fn_1.apply(null,fn2_args.contact(fn1_args));
+                return fn_1.apply(null,fn1_args.concat(fn2_args));
             }
             return fn_2;
         }
@@ -78,11 +78,11 @@ var cache = (function(){
 /*
  *函数节流
 */
-var throttle = function(){
+var throttle = function(method, delay){
     var last = 0;
     return function (){
        var now = +new Date();
-       
+
        if(now - last > delay){
            method.apply(this,arguments);
            last = now;
@@ -105,6 +105,7 @@ var debounce = function(method,delay){
         },delay);
     }
 }
+
 
 module.exports = {
 	'compose': compose,
