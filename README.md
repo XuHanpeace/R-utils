@@ -1,5 +1,7 @@
 ## 这是一个提供了函数组合、函数柯里化和一些常用函数的工具库
 
+[![NPM](https://nodei.co/npm/rapper-utils.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rapper-utils/)
+
 ## Installation
 ```javascript
 npm install -g rapper-utils
