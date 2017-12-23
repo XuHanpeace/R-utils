@@ -64,7 +64,7 @@ console.log(result); //MY NAME IS XU,HANMY NAME IS XU,HAN
 ```javascript
 //这个就很简单了
 var str = '爱就一个字peace';
-var size = sizeof(str, 'utf-8');
+var size = R.sizeof(str, 'utf-8');
 console.log(size); //output: 20;
 //在utf-8编码下，绝大多数汉字每个字符占3 Bytes。
 //5个汉字再加上5个ASCII码，所以输出结果是 **3x5+5=20** Bytes 
@@ -74,11 +74,11 @@ console.log(size); //output: 20;
 ```javascript
 //快速排序
 var arr = [3,44,1,6,41];
-var sorted = quickSort(arr);
+var sorted = R.quickSort(arr);
 console.log(sorted); //output: [1,3,6,41,44]
 
 //冒泡排序
 var arr2 = [3,44,1,6,41];
-var sorted2 = bubbleSort(arr2);
+var sorted2 = R.bubbleSort(arr2);
 console.log(arr2); //output: [1,3,6,41,44]
 ```

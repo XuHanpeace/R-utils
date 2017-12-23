@@ -174,7 +174,7 @@ var quickSort = function(arr){
     if(arr.length <= 1) {
         return arr;
     }
-    
+
     var pivotIndex = Math.floor(arr.length / 2),
         pivot = arr.splice(pivotIndex,1)[0], //取得基准元素
         left = [],  //存放小于基准的数据
@@ -195,6 +195,8 @@ module.exports = {
 	'compose': compose,
     'curry': curry,
     'cache': cache,
-    'sizeof': sizeof
+    'sizeof': sizeof,
+    'bubbleSort': bubbleSort,
+    'quickSort': quickSort
 }
 
