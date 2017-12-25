@@ -29,7 +29,7 @@ console.log(space); //output: SpacegangSpace;空格被替换成了Space
 
 /*例二：声明一个对数组每一项加一的函数*/
 //柯里化map函数
-var map = curry(function(fn, arr){
+var map = R.curry(function(fn, arr){
 		return arr.map(fn);
 	});
 
